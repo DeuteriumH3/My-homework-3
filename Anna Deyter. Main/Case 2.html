@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Case 2</title>
+    </head>
+    <body>
+    <script>
+        "use strict";
+
+        /*2. Написать программу, которая производит округление следующих чисел: 1.8432611, 1.83, 5.1 до второго 
+        знака после запятой, до целого числа, до четвертого знака после запятой, используя метод toFixed(). Вывести 
+        результаты округления всех чисел сначала до второго знака, затем до целого числа, а затем до четвертого знака 
+        после запятой в консоль.*/
+
+        let longNum;
+        let numShorter;
+        let shortNum;
+
+        longNum = 1.8432611;
+        numShorter = 1.83;
+        shortNum = 5.1;
+
+        console.log(+longNum.toFixed(2), +numShorter.toFixed(2), +shortNum.toFixed(2));
+        console.log(+longNum.toFixed(0), +numShorter.toFixed(0), +shortNum.toFixed(0));
+        console.log(+longNum.toFixed(4), +numShorter.toFixed(4), +shortNum.toFixed(4));
+    </script>
+    </body>
+</html>

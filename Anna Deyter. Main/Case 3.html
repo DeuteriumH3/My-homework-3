@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Case 3</title>
+    </head>
+    <body>
+    <script>
+        "use strict";
+
+        /*3. Написать программу, которая запрашивает число, месяц и год, затем сохраняет введенные значения в виде 
+        объекта, а затем, используя данные из объекта, выводит число, соответствующее дню недели в JavaScript, в консоль.*/
+
+        let day;
+        let month;
+        let year;
+        let date;
+        let result;
+
+        day = prompt("Введите число месяца, например, 01");
+        month = prompt("Введите месяц, например, 02");
+        year = prompt("Введите год, например, 1995");
+        date = new Date(year + "-" + month + "-" + day);
+        result = date.getDate();
+
+        console.log(result);
+    </script>
+    </body>
+</html>
