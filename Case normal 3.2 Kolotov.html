@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case normal 3.2 Kolotov
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let a;
+    let b;
+    let c;
+    let roundingTwoA;
+    let roundingTwoB;
+    let roundingTwoC;
+    let wholeNumberA;
+    let wholeNumberB;
+    let wholeNumberC;
+    let roundingFourA;
+    let roundingFourB;
+    let roundingFourC;
+
+    a = 1.8432611;
+    b = 1.83;
+    c = 5.1;
+
+    roundingTwoA = a.toFixed(2);
+    roundingTwoB = b.toFixed(2);
+    roundingTwoC = c.toFixed(2);
+    wholeNumberA = a.toFixed(0);
+    wholeNumberB = b.toFixed(0);
+    wholeNumberC = c.toFixed(0);
+    roundingFourA = a.toFixed(4);
+    roundingFourB = b.toFixed(4);
+    roundingFourC = c.toFixed(4);
+
+
+    console.log('Округление чисел a,b,c до второго знака :', 'а =', roundingTwoA, ';', 'b =', roundingTwoB, ';', 'c =', roundingTwoC);
+    console.log('Округление чисел a,b,c до целого числа :', 'а =', wholeNumberA, ';', 'b =', wholeNumberB, ';', 'c = ', wholeNumberC);
+    console.log('Округление чисел a,b,c до четвертого знака :', 'а =', roundingFourA, ';', 'b =', roundingFourB, ';', 'c =', roundingFourC);
+  </script>
+</body>
+
+</html>
