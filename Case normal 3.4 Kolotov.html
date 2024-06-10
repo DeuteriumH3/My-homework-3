@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case normal 3.4 Kolotov
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let userOne = {};
+    let userTwo = {};
+    let payYearOne;
+    let payYearTwo;
+    let payYearAll;
+    let averageMonthAll;
+
+
+    userOne.lastName = prompt('Введите фамилию первого сотрудника :', 'Иванов');
+    userOne.payMonth = +prompt('Введите месячную зарплату первого сотрудника  :', '100000');
+    userTwo.lastName = prompt('Введите фамилию второго сотрудника :', 'Петров');
+    userTwo.payMonth = +prompt('Введите месячную зарплату второго сотрудника  :', '100000');
+
+    payYearOne = (userOne.payMonth * 12);
+    payYearTwo = (userTwo.payMonth * 12);
+    payYearAll = ((userOne.payMonth + userTwo.payMonth) * 12);
+    averageMonthAll = (Math.floor((userOne.payMonth + userTwo.payMonth) / 2));
+
+    console.log('Зарплата за 1 год :', userOne.lastName, '-', payYearOne, 'руб.,', userTwo.lastName, '-', payYearTwo, 'руб.');
+    console.log('Общая зарплата за 1 год :', payYearAll, 'руб.');
+    console.log('Средняя зарплата в месяц :', averageMonthAll, 'руб.');
+  </script>
+</body>
+
+</html>

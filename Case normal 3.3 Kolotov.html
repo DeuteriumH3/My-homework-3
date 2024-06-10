@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case normal 3.3 Kolotov
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let day;
+    let month;
+    let year;
+    let date;
+
+    day = prompt('Введите число месяца', '01');
+    month = prompt('Введите месяц', '01');
+    year = prompt('Введите год', '1900');
+
+    date = new Date(year, month - 1, day);
+
+    console.log(date.getDay());
+  </script>
+</body>
+
+</html>

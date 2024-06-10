@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case hard 3.2 Kolotov
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let x;
+
+    x = +prompt('Введите вещественное число x >= 0', '1');
+
+    x = Math.sin(x) - Math.exp(x) ** (-x) + x ** 2 - Math.log(x);
+
+    console.log(x);
+  </script>
+</body>
+
+</html>

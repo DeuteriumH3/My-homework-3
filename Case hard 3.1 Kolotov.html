@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case hard 3.1 Kolotov
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let a;
+    let b;
+    let randomMember;
+
+
+    a = +prompt('Введите вещественное минимальное число а:', '1');
+    b = +prompt('Введите вещественное число b > а :', '2');
+
+    randomMember = (Math.random() * (b - a + 1)) + a;
+
+    console.log(randomMember);
+  </script>
+</body>
+
+</html>
