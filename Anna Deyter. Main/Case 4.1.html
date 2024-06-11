@@ -6,33 +6,35 @@
     <body>
     <script>
         "use strict";
+        
+/*OH MY GOSH! I DON'T KNOW HOW I CAN DROP THIS CODE! IT'S A REPEAT! I'M A NEW PEOPLE HIER! HELP ME PLEASE!*/
 
         /*4. Написать программу, которая запрашивает фамилии и месячные зарплаты двух сотрудников организации, а затем 
         выводит выплаченную каждому из них за год зарплату, их общую зарплату за год, а также их среднюю месячную зарплату, 
         округленную до большего целого числа. Данные о каждом сотруднике хранить в отдельном объекте.*/
 
         let user1 = {};
-        user1.lastName1 = prompt("Введите фамилию 1-го сотрудника");
-        user1.salary1 = prompt("Введите зарплату 1-го сотрудника");
-
         let user2 = {};
-        user2.lastName2 = prompt("Введите фамилию 2-го сотрудника");
-        user2.salary2 = prompt("Введите зарплату 2-го сотрудника");
+
+        user1.lastName = prompt("Введите фамилию 1-го сотрудника");
+        user1.salary = +prompt("Введите зарплату 1-го сотрудника");
+        user2.lastName = prompt("Введите фамилию 2-го сотрудника");
+        user2.salary = +prompt("Введите зарплату 2-го сотрудника");
 
         let yearSalary1;
         let yearSalary2;
-        let sumYearSalary12;
-        let middleSalary12;
+        let sumYearSalary;
+        let middleSalary;
 
-        yearSalary1 = 12 * user1.salary1;
-        yearSalary2 = 12 * user2.salary2;
-        sumYearSalary12 = yearSalary1 + yearSalary2;
-        middleSalary12 = (Number(user1.salary1) + Number(user2.salary2)) / 2;
+        yearSalary1 = user1.salary * 12;
+        yearSalary2 = user2.salary * 12;
+        sumYearSalary = yearSalary1 + yearSalary2;
+        middleSalary = (+user1.salary + +user2.salary) / 2;
 
-        console.log("Годовая зарплата сотрудника по фамилии" + " " + user1.lastName1 + ":" + " " + yearSalary1 + "р.");
-        console.log("Годовая зарплата сотрудника по фамилии" + " " + user2.lastName2 + ":" + " " + yearSalary2 + "р.");
-        console.log("Годовая зарплата обоих сотрудников" + ":" + " " + sumYearSalary12 + "р.");
-        console.log("Средняя месячная зарплата обоих сотрудников" + ":" + " " + Math.floor(middleSalary12) + "р.");
+        console.log("Годовая зарплата сотрудника по фамилии" + " " + user1.lastName + ":" + " " + yearSalary1 + "р.");
+        console.log("Годовая зарплата сотрудника по фамилии" + " " + user2.lastName + ":" + " " + yearSalary2 + "р.");
+        console.log("Годовая зарплата обоих сотрудников" + ":" + " " + sumYearSalary + "р.");
+        console.log("Средняя месячная зарплата обоих сотрудников" + ":" + " " + Math.ceil(middleSalary) + "р.");
     </script>
     </body>
 </html>
