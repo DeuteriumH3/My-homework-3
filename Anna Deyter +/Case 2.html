@@ -11,7 +11,7 @@
         let example;
 
         x = Number(prompt("Введите значение x в виде вещественного числа"));
-        example = Math.sin(x) - Math.exp(-x) + x**2 - Math.log(x);
+        example = Math.sin(x) - Math.exp(-x) + x**2 - Math.log(Math.abs(x));
 
         console.log(example);
     </script>
