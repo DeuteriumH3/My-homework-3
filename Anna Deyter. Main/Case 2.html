@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Case 4</title>
+        <title>Case 2</title>
     </head>
     <body>
     <script>
         "use strict";
 
-        /*4. Написать программу, которая запрашивает фамилии и месячные зарплаты двух сотрудников организации, а затем 
-        выводит выплаченную каждому из них за год зарплату, их общую зарплату за год, а также их среднюю месячную зарплату, 
-        округленную до большего целого числа. Данные о каждом сотруднике хранить в отдельном объекте.*/
+        /*2. Написать программу, которая производит округление следующих чисел: 1.8432611, 1.83, 5.1 до второго 
+        знака после запятой, до целого числа, до четвертого знака после запятой, используя метод toFixed(). Вывести 
+        результаты округления всех чисел сначала до второго знака, затем до целого числа, а затем до четвертого знака 
+        после запятой в консоль.*/
 
-        let user1 = {};
-        let user2 = {};
+        let longNum;
+        let numShorter;
+        let shortNum;
 
-        user1.lastName = prompt("Введите фамилию 1-го сотрудника");
-        user1.salary = +prompt("Введите зарплату 1-го сотрудника");
-        user2.lastName = prompt("Введите фамилию 2-го сотрудника");
-        user2.salary = +prompt("Введите зарплату 2-го сотрудника");
+        longNum = 1.8432611;
+        numShorter = 1.83;
+        shortNum = 5.1;
 
-        let yearSalary1;
-        let yearSalary2;
-        let sumYearSalary;
-        let middleSalary;
-
-        yearSalary1 = user1.salary * 12;
-        yearSalary2 = user2.salary * 12;
-        sumYearSalary = yearSalary1 + yearSalary2;
-        middleSalary = (+user1.salary + +user2.salary) / 2;
-
-        console.log("Годовая зарплата сотрудника по фамилии" + " " + user1.lastName + ":" + " " + yearSalary1 + "р.");
-        console.log("Годовая зарплата сотрудника по фамилии" + " " + user2.lastName + ":" + " " + yearSalary2 + "р.");
-        console.log("Годовая зарплата обоих сотрудников" + ":" + " " + sumYearSalary + "р.");
-        console.log("Средняя месячная зарплата обоих сотрудников" + ":" + " " + Math.ceil(middleSalary) + "р.");
+        console.log(longNum.toFixed(2), numShorter.toFixed(2), shortNum.toFixed(2));
+        console.log(longNum.toFixed(0), numShorter.toFixed(0), shortNum.toFixed(0));
+        console.log(longNum.toFixed(4), numShorter.toFixed(4), shortNum.toFixed(4));
     </script>
     </body>
 </html>
