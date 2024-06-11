@@ -20,13 +20,16 @@
         let division;
         let remains;
 
+        a = prompt("Введите первое число");
         console.log("Тип первого введённого значения:", typeof(a));
+
+        b = prompt("Введите второе число");
         console.log("Тип второго введённого значения:", typeof(b));
 
-        a = Number(prompt("Введите первое число"));
-        b = Number(prompt("Введите второе число"));
-
+        a = Number(a);
         console.log("Тип первого введённого значения после преобразования к числу:", typeof(a));
+        
+        b = Number(b);
         console.log("Тип второго введённого значения после преобразования к числу:", typeof(b));
 
         sum = a + b;
