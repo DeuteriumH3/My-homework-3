@@ -10,8 +10,8 @@
         let x;
         let example;
 
-        x = Number(prompt("Введите значение x"));
-        example = Math.sin(x) - Math.exp(-x) + x**2 - Math.log(Math.abs(x));
+        x = Number(prompt("Введите число x, не равное 0"));
+        example = Math.sin(x) - Math.pow(Math.exp(1), -x) + x**2 - Math.log(Math.abs(x));
 
         console.log(example);
     </script>
