@@ -10,10 +10,14 @@
         let a;
         let b;
 
-        a = Number(prompt("Введите первое число"));
-        b = Number(prompt("Введите второе число"));
+        a = Number(prompt("Введите число a"));
+        b = Number(prompt("Введите число b"));
 
-        console.log(Math.random());
+        function randomNumber(a, b) {
+            return Math.random() * (b - a) + a;
+        };
+
+        console.log(randomInt);
     </script>
     </body>
 </html>
